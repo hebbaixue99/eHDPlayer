@@ -444,7 +444,8 @@
 			   ExternalInterface.call("msg","[F4Mloader.finishLoad].[updateLoadTrait]");
 			   
                return;
-            }
+             }
+			}
             catch(_error:Error)
             {
 				ExternalInterface.call("msg","[F4Mloader.finishLoad].[error]");
@@ -452,6 +453,8 @@
                 loadTrait.dispatchEvent(new MediaErrorEvent(MediaErrorEvent.MEDIA_ERROR,false,false,new MediaError(_error.errorID,_error.message)));
                return;
             }
+			 
+			
          };
          updateLoadTrait(loadTrait,LoadState.LOADING);
 		 ExternalInterface.call("msg","loadTrait,LoadState.LOADING"); 
