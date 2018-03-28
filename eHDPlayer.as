@@ -160,7 +160,7 @@
 		
 		public function eHDPlayer()
 		{
-			ExternalInterface.call("msg","eHDPlayer");
+			ExternalInterface.call("msg","eHDPlayer-version-2.0");
 			this.format = new TextFormat();
 			this.mtimer = new Timer(1000);
 			this.playertimer = new Timer(1000);
