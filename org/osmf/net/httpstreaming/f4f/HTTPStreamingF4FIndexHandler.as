@@ -216,6 +216,8 @@ package org.osmf.net.httpstreaming.f4f
             {
                _loc8_ = this.streamInfos[param2].streamName + "Seg" + _loc7_ + "-Frag" + this.currentFAI.fragId;
 			   ExternalInterface.call("msg","[F4F].[_loc8_1]="+_loc8_);
+			  // _loc8_= _loc8_.replace("cdn1\.7east\.com","127\.0\.0\.1\:8000");
+			  // ExternalInterface.call("msg","[F4F].[_loc8_1]="+_loc8_);
             }
             _loc4_ = new HTTPStreamRequest(_loc8_);
             this.checkQuality(param2);
